@@ -1,3 +1,7 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+path:hover, .activePath {
+  stroke: #0686b1;
+  cursor: pointer;
+  fill: aquamarine
+}
+
+.logoHeading {
+  background-color: rgba(6,134,177,.0627451);
+  border-radius: 10px;
+  max-width: 25rem;
+  margin: 0 auto
+}
+
+.bgConfirmed {
+  background-color:rgba(108, 117, 125, 0.125);
+  border-radius: 10px;
+  padding:30px 20px;
+  color: #999;
+}
+
+.bgRecovered {
+  background-color:rgba(40, 167, 69, 0.125);
+  border-radius: 10px;
+  padding:30px 20px;
+  color: #1e7e34;
+}
+
+.bgDeceased {
+  background-color: rgba(226,48,40,.0627451);
+  border-radius: 10px;
+  padding:30px 20px;
+  color: #e23028;
+}
+
+.bgInfo {
+  background-color: #ffd62542;
+  border-radius: 10px;
+  padding: 30px 20px;
+  color: #d39e00;
+}
+
+.stateDataTable {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.stateDataTable thead th { position: sticky; top: -1px; background-color: #ffffff; box-shadow: 3px 7px 6px #ccccccad;}
+.input-group-text {
+  border-right: none;
+  background: #fff;
+}
+
+.searchBar {
+  border-left: none;
+}
+
+.searchBar:focus {
+  outline: none !important;
 }
